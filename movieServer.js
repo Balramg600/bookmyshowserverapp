@@ -35,17 +35,18 @@ let users = [
     email: "test123@gmail.com",
   },
 ];
-let bookedTickets = [
-  {
-    email: "test123@gmail.com",
-    title: "Fast X",
-    movieHall: "IMAX Wadala",
-    tickets: ["C_A_10", "C_A_13", "C_A_15", "D_A_15", "D_A_13"],
-    amount: 1250,
-    time: "01:45 PM",
-    date: "29 Today",
-  },
-];
+
+let bookedTickets = [];
+
+//{
+//     email: "test123@gmail.com",
+//     title: "Fast X",
+//     movieHall: "IMAX Wadala",
+//     tickets: ["C_A_10", "C_A_13", "C_A_15", "D_A_15", "D_A_13"],
+//     amount: 1250,
+//     time: "01:45 PM",
+//     date: "29 Today",
+//   }
 const params = {
   jwtFromRequest: ExtractJWT.fromAuthHeaderAsBearerToken(),
   secretOrKey: "jwtsecret23647832",
